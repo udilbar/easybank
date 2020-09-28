@@ -45,13 +45,18 @@
 .sitenav__toggler {
   display: none;
   width: 30px;
-  height: 17px;
+  height: 30px;
   border: none;
   background: none;
   background-image: url("../img/icon-hamburger.svg");
   background-repeat: no-repeat;
   background-size: 24px 11px;
   background-position: center center;
+}
+
+.sitenav__toggler--changer {
+  background-image: url("../img/icon-close.svg");
+  background-size: 18px 19px;
 }
 
 @media only screen and (max-width: 770px) {
