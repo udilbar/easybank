@@ -82,6 +82,10 @@ img {
   height: auto;
 }
 
+h2 {
+  color: #2D314D;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -103,6 +107,7 @@ img {
 
 .easybank-header {
   position: fixed;
+  z-index: 500;
   width: 100%;
   top: 0;
   left: 0;
@@ -159,12 +164,17 @@ img {
 }
 
 .sitenav__item {
+  position: relative;
+  z-index: 1;
   margin-right: 18px;
   margin-left: 18px;
 }
 
 .sitenav__item:after {
   display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: -28px;
   width: 100%;
   height: 4px;
   background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
@@ -279,6 +289,7 @@ img {
   font-size: 14px;
   line-height: 28px;
   font-weight: 500;
+  text-transform: capitalize;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -293,6 +304,107 @@ img {
 @media only screen and (max-width: 500px) {
   .easybank-header__button {
     display: none;
+  }
+}
+
+.easybank-main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-image: url("../img/bg-intro-desktop.svg");
+  background-size: 1271px 1034px;
+  background-position: right -470px top -260px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1195px) {
+  .easybank-main {
+    background-size: 1000px 763px;
+    background-position: right -350px top -190px;
+  }
+}
+
+.digitalbank {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+.digitalbank__content {
+  max-width: 447px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.digitalbank__content-heading {
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.digitalbank__content-text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.digitalbank__img {
+  display: block;
+  width: 732px;
+  height: 901px;
+  position: absolute;
+  z-index: 1;
+  right: -115px;
+  top: -42px;
+}
+
+@media only screen and (max-width: 1195px) {
+  .digitalbank__img {
+    width: 600px;
+    height: 769px;
+    right: -95px;
+    top: -15px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .digitalbank__content {
+    max-width: 327px;
+  }
+  .digitalbank__content-heading {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.714286px;
+  }
+  .digitalbank__content-text {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.234375px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .digitalbank__content {
+    padding-top: 322px;
+  }
+  .digitalbank__img {
+    width: 327px;
+    height: 402px;
+    top: -57px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 /*# sourceMappingURL=main.css.map */

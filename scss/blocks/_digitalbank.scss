@@ -1,0 +1,78 @@
+.digitalbank {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+.digitalbank__content {
+  max-width: 447px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.digitalbank__content-heading {
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.digitalbank__content-text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.digitalbank__img {
+  display: block;
+  width: 732px;
+  height: 901px;
+  position: absolute;
+  z-index: 1;
+  right: -115px;
+  top: -42px;
+}
+
+@media only screen and (max-width: 1195px) {
+  .digitalbank__img {
+    width: 600px;
+    height: 769px;
+    right: -95px;
+    top: -15px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .digitalbank__content {
+    max-width: 327px;
+  }
+
+  .digitalbank__content-heading {
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: -0.714286px;
+  }
+
+  .digitalbank__content-text {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.234375px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .digitalbank__content {
+    padding-top: 322px;
+  }
+
+  .digitalbank__img {
+    width: 327px;
+    height: 402px;
+    top: -57px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

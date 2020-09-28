@@ -1,0 +1,14 @@
+.easybank-main {
+  flex-grow: 1;
+  background-image: url("../img/bg-intro-desktop.svg");
+  background-size: 1271px 1034px;
+  background-position: right -470px top -260px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1195px) {
+  .easybank-main {
+    background-size: 1000px 763px;
+    background-position: right -350px top -190px;
+  }
+}
