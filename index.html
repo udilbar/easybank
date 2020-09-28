@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Easybank landing page</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <header class="easybank-header">
+  <header class="easybank-header  easybank-header--background">
     <div class="container easybank-header__container">
       <a class="easybank-header__logo" href="index.html">
-        <img src="img/logo.svg" alt="Easybank logo" width="139" height="20">
+        <img class="easybank-header__logo-img" src="img/logo.svg" alt="Easybank logo" width="139" height="20">
       </a>
-      <nav class="sitenav easybank-header__sitenav">
+      <nav class="sitenav">
         <ul class="sitenav__list">
           <li class="sitenav__item">
             <a class="sitenav__link" href="#">Home</a>
@@ -32,9 +33,21 @@
           </li>
         </ul>
       </nav>
-      <a class="button easybank-header__btn" href="#">Request Invite</a>
+      <div class="easybank-header__buttons">
+        <a class="button easybank-header__button" href="#">Request Invite</a>
+        <button class="sitenav__toggler" type="button"></button>
+      </div>
     </div>
   </header>
 </body>
+
+<script>
+  var elSiteHeader = document.querySelector('.sitenav');
+  var elSiteHeaderToggler = document.querySelector('.sitenav__toggler');
+
+  elSiteHeaderToggler.addEventListener('click', function () {
+    elSiteHeader.classList.toggle('sitenav--open');
+  });
+</script>
 
 </html>

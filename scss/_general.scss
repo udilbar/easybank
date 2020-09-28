@@ -9,7 +9,19 @@ html {
 }
 
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: "Public Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: $text-color;
+  background-color: #fafafa;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }

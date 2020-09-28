@@ -1,0 +1,21 @@
+.easybank-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.easybank-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.easybank-header__buttons {
+  display: flex;
+  align-items: center;
+}

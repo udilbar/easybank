@@ -1,0 +1,109 @@
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+.sitenav__item {
+  margin-right: 18px;
+  margin-left: 18px;
+
+  &:after {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-image: $main-color;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    content: "";
+  }
+}
+
+.sitenav__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: left 0;
+}
+
+.sitenav__link {
+  position: relative;
+  z-index: 1;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  text-decoration: none;
+  color: $text-color;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.sitenav__toggler {
+  display: none;
+  width: 30px;
+  height: 17px;
+  border: none;
+  background: none;
+  background-image: url("../img/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 11px;
+  background-position: center center;
+}
+
+@media only screen and (max-width: 770px) {
+  .sitenav {
+    display: none;
+  }
+
+  .sitenav--open {
+    display: block;
+  }
+
+  .sitenav {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 100%;
+  }
+
+  .sitenav__list {
+    width: calc(100% - 40px);
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .sitenav__item {
+    padding-bottom: 24px;
+  }
+
+  .sitenav__item::after {
+    height: 0;
+  }
+
+  .sitenav__link {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #2D314D;
+  }
+
+  .sitenav__toggler {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .easybank-header--background .sitenav {
+    height: 100vh;
+    background-image: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
+  }
+}

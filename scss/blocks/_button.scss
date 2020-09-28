@@ -1,0 +1,28 @@
+.button {
+  display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  background-image: $main-color;
+  border-radius: 22px;
+  padding: 8px 35px;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.4;
+}
+
+@media only screen and (max-width: 500px) {
+  .easybank-header__button {
+    display: none;
+  }
+}
