@@ -11,7 +11,6 @@
 }
 
 .digitalbank__content-heading {
-  font-weight: 100;
   font-size: 56px;
   line-height: 64px;
   letter-spacing: -1px;
@@ -46,6 +45,10 @@
 }
 
 @media only screen and (max-width: 1030px) {
+  .digitalbank {
+    padding-bottom: 88px;
+  }
+
   .digitalbank__content {
     max-width: 327px;
   }
@@ -75,7 +78,7 @@
 @include breakpoint-down (750px) {
   .digitalbank__content {
     max-width: calc(100% - 60px);
-    padding-top: 150px;
+    padding-top: 125px;
     align-items: center;
     text-align: center;
     margin-left: auto;
