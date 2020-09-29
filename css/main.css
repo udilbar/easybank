@@ -75,6 +75,7 @@ body {
   line-height: 26px;
   color: #9597A5;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 img {
