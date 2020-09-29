@@ -336,7 +336,13 @@ h2, h3 {
   .easybank-main {
     background-image: url("../img/bg-intro-mobile.svg");
     background-size: 754px 397px;
-    background-position: right 0px top -100px;
+    background-position: right 10px top -100px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .easybank-main {
+    background-position: right 0 top -100px;
   }
 }
 
@@ -424,7 +430,7 @@ h2, h3 {
 @media only screen and (max-width: 750px) {
   .digitalbank__content {
     max-width: calc(100% - 60px);
-    padding-top: 125px;
+    padding-top: 150px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
