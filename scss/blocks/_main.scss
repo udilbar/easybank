@@ -12,3 +12,17 @@
     background-position: right -350px top -190px;
   }
 }
+
+@include breakpoint-down (915px) {
+  .easybank-main {
+    background-size: 870px auto;
+  }
+}
+
+@media only screen and (max-width: 777px) {
+  .easybank-main {
+    background-image: url("../img/bg-intro-mobile.svg");
+    background-size: 754px 397px;
+    background-position: right 0px top -100px;
+  }
+}
