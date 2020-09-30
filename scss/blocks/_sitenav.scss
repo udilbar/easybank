@@ -77,22 +77,21 @@
 
 @media only screen and (max-width: 770px) {
   .sitenav {
+    max-width: 100%;
     display: none;
   }
 
   .sitenav--open {
     display: block;
-  }
-
-  .sitenav {
     position: absolute;
     z-index: 1;
     width: 100%;
     left: 0;
+    right: 0;
     top: 100%;
   }
 
-  .sitenav__list {
+  .sitenav--open .sitenav__list {
     width: calc(100% - 40px);
     margin-top: 24px;
     margin-left: auto;
@@ -104,15 +103,15 @@
     padding-bottom: 32px;
   }
 
-  .sitenav__item:not(:last-child) {
+  .sitenav--open .sitenav__item:not(:last-child) {
     padding-bottom: 24px;
   }
 
-  .sitenav__item::after {
+  .sitenav--open .sitenav__item::after {
     height: 0;
   }
 
-  .sitenav__link {
+  .sitenav--open .sitenav__link {
     padding-top: 0;
     padding-bottom: 0;
     color: #2D314D;
@@ -123,7 +122,8 @@
     margin-left: 15px;
   }
 
-  .easybank-header--background .sitenav {
+  .easybank-header--background .sitenav--open {
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
   }
