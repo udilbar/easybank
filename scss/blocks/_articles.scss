@@ -98,3 +98,38 @@
   letter-spacing: -0.203125px;
   margin: 0;
 }
+
+@include breakpoint-down (1149px) {
+  .articles__item {
+    width: 45%;
+  }
+
+  .article:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+@include breakpoint-down (670px) {
+  .articles {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    text-align: center;
+  }
+
+  .articles__list {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .articles__item {
+    width: 327px;
+  }
+
+  .article::before {
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
