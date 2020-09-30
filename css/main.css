@@ -303,8 +303,9 @@ h2, h3 {
   opacity: 0.4;
 }
 
-.easybank-footer__button {
-  margin-bottom: 24px;
+.easybank-footer__button-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 22px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -879,6 +880,7 @@ h2, h3 {
   letter-spacing: -0.234375px;
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
+  margin-top: 24px;
 }
 
 @media only screen and (max-width: 1148px) {
