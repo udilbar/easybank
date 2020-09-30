@@ -151,10 +151,6 @@ h2, h3 {
   height: 20px;
 }
 
-.easybank-footer__logo .easybank__logo-img path {
-  fill: #ffffff;
-}
-
 .sitenav__list {
   margin: 0;
   padding: 0;
@@ -305,6 +301,10 @@ h2, h3 {
 
 .button:hover {
   opacity: 0.4;
+}
+
+.easybank-footer__button {
+  margin-bottom: 24px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -776,7 +776,108 @@ h2, h3 {
   background-color: #2D314D;
 }
 
+.easybank-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.easybank-footer__logo-social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 131px;
+}
+
+.easybank-footer__logo {
+  margin-bottom: 55px;
+}
+
+.easybank-footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.easybank-footer__social-icon:not(:last-child) {
+  margin-right: 13px;
+}
+
+.social-icon__link-img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon__link-img path {
+  -webkit-transition: fill 0.2s ease;
+  transition: fill 0.2s ease;
+}
+
+.social-icon:hover .social-icon__link-img path {
+  fill: #30C88F;
+}
+
+.easybank-footer__list {
+  width: 100%;
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-right: 255px;
+}
+
+.easybank-footer__item {
+  width: 160px;
+}
+
+.footer-item__link {
+  font-size: 15px;
+  letter-spacing: -0.234375px;
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.easybank-footer__item:hover .footer-item__link {
+  color: #30C88F;
+}
+
+.easybank-footer__button-copyrights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .easybank-footer__copyright {
+  font-size: 15px;
+  letter-spacing: -0.234375px;
   text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
