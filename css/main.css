@@ -272,7 +272,7 @@ h2, h3 {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  .sitenav__item {
+  .sitenav__item:not(:last-child) {
     padding-bottom: 24px;
   }
   .sitenav__item::after {

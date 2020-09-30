@@ -104,7 +104,7 @@
     padding-bottom: 32px;
   }
 
-  .sitenav__item {
+  .sitenav__item:not(:last-child) {
     padding-bottom: 24px;
   }
 
