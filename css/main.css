@@ -145,10 +145,14 @@ h2, h3 {
   padding-bottom: 32px;
 }
 
-.easybank-header__logo-img {
+.easybank__logo-img {
   display: block;
   width: 139px;
   height: 20px;
+}
+
+.easybank-footer__logo .easybank__logo-img path {
+  fill: #ffffff;
 }
 
 .sitenav__list {
@@ -764,5 +768,15 @@ h2, h3 {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.easybank-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #2D314D;
+}
+
+.easybank-footer__copyright {
+  text-transform: capitalize;
 }
 /*# sourceMappingURL=main.css.map */
