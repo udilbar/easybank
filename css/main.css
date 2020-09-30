@@ -176,7 +176,7 @@ h2, h3 {
   display: block;
   position: absolute;
   z-index: 1;
-  bottom: -27px;
+  bottom: -26px;
   width: 100%;
   height: 4px;
   background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
