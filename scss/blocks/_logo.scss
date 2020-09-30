@@ -1,11 +1,16 @@
 .easybank-header__logo {
   margin-right: 24px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .easybank__logo-img {
   display: block;
   width: 139px;
   height: 20px;
+}
+
+@include breakpoint-down (770px) {
+  .easybank-header__logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
