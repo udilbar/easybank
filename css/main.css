@@ -880,4 +880,57 @@ h2, h3 {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
+
+@media only screen and (max-width: 1148px) {
+  .easybank-footer__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .easybank-footer__logo-social-icons,
+  .easybank-footer__list {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .easybank-footer__list {
+    max-width: 200px;
+  }
+  .easybank-footer__item {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .easybank-footer__container,
+  .easybank-footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .easybank-footer__social-icons {
+    margin-bottom: 32px;
+  }
+  .easybank-footer__list {
+    margin-bottom: 24px;
+  }
+  .easybank-footer__item {
+    width: 160px;
+    margin-bottom: 8px;
+  }
+  .easybank-footer__button-copyrights {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 /*# sourceMappingURL=main.css.map */

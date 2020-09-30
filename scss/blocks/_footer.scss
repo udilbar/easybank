@@ -84,3 +84,51 @@
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.5);
 }
+
+@include breakpoint-down (1148px) {
+  .easybank-footer__container {
+    justify-content: space-between;
+  }
+
+  .easybank-footer__logo-social-icons,
+  .easybank-footer__list {
+    margin-right: 0;
+  }
+}
+
+@include breakpoint-down (915px) {
+  .easybank-footer__list {
+    max-width: 200px;
+  }
+
+  .easybank-footer__item {
+    width: 100px;
+  }
+}
+
+@include breakpoint-down (670px) {
+  .easybank-footer__container,
+  .easybank-footer__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .easybank-footer__social-icons {
+    margin-bottom: 32px;
+  }
+
+  .easybank-footer__list {
+    margin-bottom: 24px;
+  }
+
+  .easybank-footer__item {
+    width: 160px;
+    margin-bottom: 8px;
+  }
+
+  .easybank-footer__button-copyrights {
+    align-items: center;
+  }
+}
